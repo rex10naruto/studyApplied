@@ -23,8 +23,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"http://localhost:3000",
-		"https://study-applied.vercel.app",   
+		origin: [
+      "http://localhost:3000",               // local frontend
+      "https://study-applied.vercel.app",    // deployed frontend
+    ], 
 		credentials:true,
 	})
 )
