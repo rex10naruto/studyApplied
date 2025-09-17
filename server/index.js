@@ -26,6 +26,7 @@ app.use(
 		origin: [
       "http://localhost:3000",               // local frontend
       "https://study-applied.vercel.app",    // deployed frontend
+	  "https://study-applied-bg9h0w8q2-akhils-projects-2a19b746.vercel.app",
     ], 
 		credentials:true,
 	})
